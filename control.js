@@ -18,6 +18,10 @@ console.log("I am READY!")
    console.log("Async started")
    
 console.log(clubs)
+
+cron.schedule('00 30 02 * * Monday' , () =>{
+
+
 const getClubData = async item => {
   var club = await bclient.getClub(`${item.Club_Tag}`)
   item.Season_Start = club.trophies 
@@ -43,6 +47,12 @@ getData().then(async (data) => {
 
 })
 
+},{
+    scheduled: true,
+    timezone: "Pacific"
+
+
+})
 
      
    
@@ -76,7 +86,7 @@ getData().then(async (data) => {
 clubs = clubs.sort((a,b) => (a.Trophies_Gained > b.Trophies_Gained) ? -1 : ((b.Trophies_Gained > a.Trophies_Gained) ? 1 : 0)); 
 for(aclub of clubs){
   
-
+    
 
 
 }
