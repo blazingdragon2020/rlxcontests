@@ -1,0 +1,18 @@
+{
+  "name": "4serverbot",
+  "version": "1.0.0",
+  "description": "Discord bot for vedant",
+  "main": "control.js",
+  "dependencies": {
+    "brawlstars.js": "^1.0.7",
+    "discord.js": "^12.2.0",
+    "node-cron": "^2.0.3",
+    "xlsx": "^0.16.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Soham",
+  "license": "ISC"
+}
